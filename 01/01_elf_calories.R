@@ -12,6 +12,8 @@ sum_vec_fn <- function(x,y) {
 
 calories_vec <- mapply(sum_vec_fn, starts, stops)
 
+# Part 1
 max(calories_vec)
 
+# Part 2
 sum(sort(calories_vec, decreasing = T)[1:3])
